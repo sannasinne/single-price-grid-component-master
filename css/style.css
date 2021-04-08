@@ -10,9 +10,70 @@ html {
 
 body {
   font-family: 'Karla', sans-serif;
-  background: hsla(218, 22%, 67%, 0.3);
+  background: hsl(204, 43%, 93%);
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* Container styles */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styles */
+
+.card-1 {
+  background: white;
+}
+
+.card-1 h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+.card-1 h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.card-1 p {
+  color: hsl(218, 22%, 67%);
+}
+
+.card-2 {
+  background: hsl(179, 62%, 43%);
+}
+
+.card-2 h2,
+.card-3 h2 {
+  color: white;
+}
+
+.card-2 span {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.card-3 {
+  background: hsla(179, 62%, 43%, 0.7);
+}
+
+ul {
+  list-style: none;
 }
 
 /* Button styles */
@@ -23,5 +84,11 @@ button {
 
 /* Attribution */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  color: hsl(179, 62%, 43%); 
+}
+.attribution a { 
+  color: hsl(71, 73%, 54%); 
+}

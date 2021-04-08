@@ -19,6 +19,10 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 p,
 li {
   font-size: 16px;
@@ -33,12 +37,18 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px 0 50px;
 }
 
 /* Card styles */
+.card {
+  padding: 10px 20px 20px;
+  width: 350px;
+}
 
 .card-1 {
   background: white;
+  border-radius: 5px 5px 0 0;
 }
 
 .card-1 h2 {
@@ -70,16 +80,32 @@ li {
 
 .card-3 {
   background: hsla(179, 62%, 43%, 0.7);
+  border-radius: 0 0 5px 5px;
 }
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 /* Button styles */
 
 button {
   font-family: 'Karla', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  background: hsl(71, 73%, 54%);
+  padding: 10px 15px;
+  border: 1px solid hsl(71, 73%, 54%);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all .7s ease-in-out;
+}
+
+button:hover {
+  background: hsl(179, 62%, 43%);
 }
 
 /* Attribution */

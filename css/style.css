@@ -42,7 +42,7 @@ li {
 
 /* Card styles */
 .card {
-  padding: 10px 20px 20px;
+  padding: 10px 25px 20px;
   width: 350px;
 }
 
@@ -88,6 +88,42 @@ ul {
   padding-left: 0;
 }
 
+@media screen and (min-width: 990px) {
+  .container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px 300px;
+    justify-items: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    width: 800px;
+    height: 200px;
+  }
+
+  .card-2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 400px;
+    height: 300px;
+    border-radius: 0 0 0 5px;
+    padding: 20px;
+  }
+
+  .card-3 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 400px;
+    height: 300px;
+    border-radius: 0 0 5px 0;
+    padding: 20px;
+  }
+}
+
 /* Button styles */
 
 button {
@@ -96,7 +132,7 @@ button {
   font-size: 18px;
   font-weight: 700;
   background: hsl(71, 73%, 54%);
-  padding: 10px 15px;
+  padding: 12px 15px;
   border: 1px solid hsl(71, 73%, 54%);
   border-radius: 5px;
   cursor: pointer;
